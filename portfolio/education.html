@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Singh Portfolio - Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('education bg2.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 139, 0.95); /* Darker Navy Blue for better contrast */
+            height: 70px;
+            padding: 0 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            list-style-type: none;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: rgb(255, 215, 0); /* Gold color */
+            font-size: 1.3rem;
+        }
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+            color: black;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+        .timeline-item {
+            padding: 20px;
+            position: relative;
+            width: 50%;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 15px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="leftSection">Aryan's Portfolio</div> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certificates.html">Certificates & Internships</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="timeline">
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>Matriculation</h2>
+                    <p>CBSE Board (2020)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>Intermediate</h2>
+                    <p>Bihar Board (2022)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="content">
+                    <h2>BTech in AI & DS</h2>
+                    <p>Maharshi Dayanand University (2022-2026)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

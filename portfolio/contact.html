@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Singh Portfolio - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Algerian&display=swap" rel="stylesheet">
+    <style>
+        /* Full-Page Tech-Themed Background */
+        body {
+            background: url('contact background.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(38, 27, 194); 
+            font-family: 'Algerian', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent navbar */
+            height: 70px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: cyan;
+            font-size: 1.3rem;
+        }
+
+        /* Contact Section */
+        .section {
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .section img {
+            width: 80px; /* Increased size */
+            height: 80px; /* Increased size */
+            margin: 15px; /* Increased margin */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added box-shadow transition */
+            border-radius: 50%; /* Makes the icons circular */
+            border: 2px solid white; /* Added border */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Added subtle shadow */
+        }
+
+        .section img:hover {
+            transform: scale(1.2); /* Slightly zooms in */
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.8); /* Stronger shadow on hover */
+        }
+
+        /* Contact Info Styling */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info a {
+            color: rgb(200, 20, 20);
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .contact-info a:hover {
+            color: rgb(92, 159, 9);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="leftSection">Aryan's Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certificates.html">Certificates & Internships</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main>
+        <section id="contact" class="section">
+            <div class="intro">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out to me via the following platforms:</p>
+
+                <!-- Contact Icons -->
+                <div class="contact-info">
+                    <!-- Gmail -->
+                    <a href="mailto:itsaryan0710@gmail.com" target="_blank">
+                        <img src="gmail.png" alt="Gmail"> 
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/im_aryansingh_ji?igsh=MWsydnZtZHNvYTQyeg==" target="_blank" onclick="return confirm('Do you want to open Instagram?')">
+                        <img src="instagram.jpg" alt="Instagram">
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/aryansingh0710" target="_blank" onclick="return confirm('Do you want to open GitHub?')">
+                        <img src="GitHub-logo.png" alt="GitHub">                
+                    </a>
+
+                    <!-- Mobile No -->
+                    <a href="tel:+9210871059">
+                        <img src="contact.png" alt="Mobile"> +91 9210871059
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/aryan-singh-ba6000252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" onclick="return confirm('Do you want to open LinkedIn?')">
+                        <img src="linkdin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

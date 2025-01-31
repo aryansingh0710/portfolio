@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Singh Portfolio - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Algerian&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(138, 30, 164, 0.892);
+            color: rgb(109, 121, 218);
+            font-family: 'Algerian', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(138, 30, 164, 0.892);
+            height: 70px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+        
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+        color: rgb(43, 24, 147);
+        font-size: 1.3rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 133px 0;
+            align-items: center;
+        }
+        .leftSection {
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px;
+
+        }
+        .rightSection img {
+            width: 80%;
+            margin: 50px 0;
+        } 
+        .purple {
+            color: rgba(174, 33, 118, 0.927);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav><div  class="leftSection">Aryan's Portfolio</div> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certificates.html">Certificates & Internships</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1>Hi, I am <span class="purple">Aryan Singh</span></h1>
+                <div>I am a software engineer specialized in AI & DS</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Profile Image">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: [' Welcome to my portfolio','i am  software engineer ','Ios app developer'],
+          typeSpeed: 50,
+        });
+      </script>
+
+</body>
+</html>
