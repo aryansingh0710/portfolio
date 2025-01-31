@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Singh Portfolio - Certificates & Internships</title>
+    <link href="https://fonts.googleapis.com/css2?family=Algerian&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('cerificate bg2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(109, 121, 218);
+            font-family: 'Algerian', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(138, 30, 164, 0.892);
+            height: 70px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(43, 24, 147);
+            font-size: 1.3rem;
+        }
+        .intro {
+            text-align: center;
+        }
+        #internshipDetails {
+            display: none;
+        }
+        .section img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: rgba(218, 111, 65, 0.9);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(255, 126, 95, 0.4);
+        }
+    </style>
+    <script>
+        function toggleInternshipDetails() {
+            var details = document.getElementById('internshipDetails');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav><div class="leftSection">Aryan's Portfolio</div> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certificates.html">Certificates & Internships</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="intro">
+                <h1>Certificates</h1>
+                
+                <a href="https://drive.google.com/drive/folders/1nzd4Pn8a2lLdNST0CiHt7uH2vL1IzeKL?usp=drive_link" target="_blank" class="button">Open Shared Folder</a>
+                
+                <h2>Internships</h2>
+                <button class="button" onclick="toggleInternshipDetails()">View Internship Details</button>
+                
+                <div id="internshipDetails">
+                    <h3>IBM SkillBuild Internship</h3>
+                    <p>Duration: July - August 2024</p>
+                    <p>Focus on Data Analytics using Jupyter Notebook, Python, Data Cleaning, Refining, Visualization. Worked on the project "Inequality in Education".</p>
+                    
+                    <h3>Onspire Internship & Training</h3>
+                    <p>Duration: 8 weeks</p>
+                    <p>Focused on iOS Mobile Application Development, creating Mac-based clones of Netflix and Instagram, implementing UI transitions and interactions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
