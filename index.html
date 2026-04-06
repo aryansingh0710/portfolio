@@ -984,9 +984,9 @@ const customProjects = [
     description: "Retrieval-Augmented Generation chatbot using LangChain + vector DB",
     language: "Python",
     featured: true,
-    github: "#", // no repo
+    github: "", // no repo
     demo: "",   // if no live link
-    image: "https://via.placeholder.com/400x200?text=RAG+Project"
+    image: "images/rag.jpg"
   }
 ];
 try {
@@ -1097,7 +1097,15 @@ try {
     <span class="lang-badge">${repo.language || 'Code'}</span>
 
     <div style="display:flex;gap:1rem;">
-      <a href="${repo.github || repo.html_url}" target="_blank" class="gh-link">GitHub</a>
+      <div class="project-links">
+  <a href="${repo.html_url}" target="_blank" class="gh-link">GitHub →</a>
+
+  ${
+    repo.demo || repo.homepage
+      ? `<a href="${repo.demo || repo.homepage}" target="_blank" class="demo-link">Live →</a>`
+      : `<span class="demo-disabled">No Live</span>`
+  }
+</div>
       ${
         repo.demo
           ? `<a href="${repo.demo}" target="_blank" class="demo-link">Live</a>`
