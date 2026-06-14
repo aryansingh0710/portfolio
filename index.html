@@ -754,15 +754,47 @@
     </div>
     <div class="glass-card" style="padding: 2rem;">
       <h3 style="font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem;">Send a Message</h3>
-      <form class="contact-form" onsubmit="handleContact(event)">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; cursor: none;">
-          Send Message
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-        </button>
-      </form>
+     <form
+  class="contact-form"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+>
+
+  <input
+    type="hidden"
+    name="access_key"
+    value="14f7f21c-d2b7-45c7-aa0b-b375b9180a64"
+  >
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+  >
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+  >
+
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    required
+  ></textarea>
+
+  <button
+    type="submit"
+    class="btn-primary"
+    style="width:100%;justify-content:center;"
+  >
+    Send Message
+  </button>
+
+</form>
     </div>
   </div>
 </section>
